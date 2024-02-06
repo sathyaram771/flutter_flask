@@ -6,7 +6,7 @@ CORS(app)
 
 @app.route('/')
 def get():
-    return render_template(index.html)
+    return render_template('index.html')
 
 @app.route('/process_data', methods=['POST'])
 def process_data():
